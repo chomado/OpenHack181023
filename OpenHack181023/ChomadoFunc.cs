@@ -26,7 +26,7 @@ namespace OpenHack181023
             productId = productId ?? data?.productId;
 
             return productId != null
-                ? (ActionResult)new OkObjectResult($"Hello, {productId}")
+                ? (ActionResult)new OkObjectResult($"The product name for your product id {productId} is Starfruit Explosion")
                 : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
         }
     }
